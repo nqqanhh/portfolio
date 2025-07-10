@@ -2,7 +2,7 @@ import { Code, User } from "lucide-react"
 import me from "../assets/me.jpg"
 
 export const AboutSection = () => {
-    return <section id="#about" className="py-24 px-4 relative">
+    return <section id="about" className="py-24 px-4 relative">
     {/*  */}
     <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -38,7 +38,7 @@ export const AboutSection = () => {
             </div>
 
             <div className="grid grid-cols-1 gap-6">
-                <div className="gradient-border p-6 card-hover">
+                <div className="bg-card gradient-border p-6 card-hover">
                     <div className="flex items-start gap-4">
                         <div className="p-3 rounded-full bg-primary/10">
                             <Code className="h-6 w-6 text-primary"/>
