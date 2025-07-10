@@ -10,7 +10,9 @@ const projects = [
     image: img1,
     tags: ["Nodejs", "Express", "React", "CSS", "MongoDB"],
     demoUrl: "https://example.com/demo-one",
-    githubUrl: "https://github.com/your-repo/project-one",
+    _githubUrl: "https://github.com/nqqanhh/facebookphishing-project.git",
+    _githubUrl_:" https://github.com/nqqanhh/facebook-phishingattacker-page.git",
+    githubUrl: "https://github.com/nqqanhh/facebookphishing-project.git",
   },
   {
     id: 2,
@@ -92,7 +94,15 @@ export const ProjectsSection = () => {
                       <Github size={20} />
                     </a>
                     {project._githubUrl ? <a
-                      href={project.githubUrl}
+                      href={project._githubUrl}
+                      className="p-2 rounded-full hover:bg-primary/10 transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github size={20} />
+                    </a> : null}
+                    {project._githubUrl_ ? <a
+                      href={project._githubUrl_}
                       className="p-2 rounded-full hover:bg-primary/10 transition"
                       target="_blank"
                       rel="noopener noreferrer"
